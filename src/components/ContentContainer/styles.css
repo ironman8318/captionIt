@@ -1,0 +1,136 @@
+.contentContainer {
+  min-height: 30vh;
+  padding: 4rem;
+  background-image: url("https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+.result {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #2419c4;
+}
+
+.error {
+  font-weight: normal;
+  font-size: 3rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.error span {
+  color: blue;
+  text-decoration: underline;
+}
+
+.result span {
+  font-weight: bold;
+  font-style: italic;
+  animation-name: an;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes an {
+  from {
+    color: #c23c1a;
+    transform: skew(4deg);
+  }
+
+  to {
+    color: rgb(13, 83, 16);
+    transform: skew(0);
+  }
+}
+
+.form {
+  width: 80%;
+  height: 20rem;
+  padding: 4rem;
+  margin: 0rem auto 4rem auto;
+  /* background: red; */
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-position: center;
+  background-size: cover;
+}
+
+.form > * {
+  margin-bottom: 2rem;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  outline: none;
+  padding: 1rem 2rem;
+  background-color: #ffe39c;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: #6f553e;
+  border-bottom: 2px solid #472505;
+}
+
+input[type="text"] {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-family: inherit;
+  outline: none;
+  font-size: 1.5rem;
+  width: 70%;
+}
+
+button[type="submit"] {
+  outline: none;
+  font-size: 2rem;
+  padding: 0.5rem 1.5rem;
+  width: 15rem;
+  border-radius: 10px;
+  border: none;
+  color: #2d1f05;
+  background: #ffbb67;
+  border: 1px solid #2d1f05;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 945px) {
+  .contentContainer {
+    padding: 1rem;
+  }
+  .form {
+    width: 95%;
+    padding: 1rem;
+    height: 25rem;
+  }
+}
+
+@media only screen and (max-width: 659px) {
+  .button {
+    padding: 0.3rem 0.7rem;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+  .form {
+    width: 100%;
+  }
+  .buttonGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,11 @@
+input[type="file"] {
+  font-size: 1.6rem;
+  margin-left: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+input#file-upload-button {
+  background: red !important;
+}

@@ -1,0 +1,27 @@
+.header {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: url("https://images.pexels.com/photos/610293/pexels-photo-610293.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-position: left;
+  background-size: cover;
+  filter: blur(2);
+}
+
+.header h1 {
+  font-size: 6rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.header h3 {
+  font-size: 4rem;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
